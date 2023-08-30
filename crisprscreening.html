@@ -1,0 +1,917 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mycss.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Radhika Kataria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About Me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="phdproject.html">PhD Project
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="collaborativeprojects.html">Collaborative Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="crisprscreening.html">CRISPR Screening
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <ul class="nav nav-tabs mt-5">
+      <li class="nav-item">
+        <a data-toggle="tab" class="nav-link active" aria-current="page" href="#menu1">Results</a>
+      </li>
+      <li class="nav-item">
+        <a data-toggle="tab" class="nav-link" aria-current="page" href="#menu2">Visualising the Data</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div id="menu1" class="card w-75 mt-5 tab-pane fade show active">
+        <div class="card-body">
+          <h4 class="card-title">Results</h4>
+          <p class="card-text">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Knocked out gene</th>
+                <th>Cancer Driver Mutation</th>
+                <th>Mutation Absent</th>
+                <th>Mutation Present</th>
+                <th>p value</th>
+                <th>fdr adjusted p value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="odd">
+                <td>GeneE_KO</td>
+                <td>Gene8_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.0319</td>
+                <td class=" dt-right">0.319</td>
+              </tr>
+              <tr class="even">
+                <td>GeneA_KO</td>
+                <td>Gene9_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.0471</td>
+                <td class=" dt-right">0.471</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneG_KO</td>
+                <td>Gene6_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.0477</td>
+                <td class=" dt-right">0.305</td>
+              </tr>
+              <tr class="even">
+                <td>GeneG_KO</td>
+                <td>Gene3_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.0588</td>
+                <td class=" dt-right">0.586666666666667</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneG_KO</td>
+                <td>Gene4_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.0588</td>
+                <td class=" dt-right">0.47</td>
+              </tr>
+              <tr class="even">
+                <td>GeneF_KO</td>
+                <td>Gene2_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.0676</td>
+                <td class=" dt-right">0.456</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneB_KO</td>
+                <td>Gene2_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.0912</td>
+                <td class=" dt-right">0.456</td>
+              </tr>
+              <tr class="even">
+                <td>GeneD_KO</td>
+                <td>Gene6_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.0983</td>
+                <td class=" dt-right">0.305</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneG_KO</td>
+                <td>Gene9_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.121</td>
+                <td class=" dt-right">0.52</td>
+              </tr>
+              <tr class="even">
+                <td>GeneB_KO</td>
+                <td>Gene6_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.122</td>
+                <td class=" dt-right">0.305</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneE_KO</td>
+                <td>Gene6_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.122</td>
+                <td class=" dt-right">0.305</td>
+              </tr>
+              <tr class="even">
+                <td>GeneB_KO</td>
+                <td>Gene10_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.13</td>
+                <td class=" dt-right">0.956</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneG_KO</td>
+                <td>Gene8_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.13</td>
+                <td class=" dt-right">0.505</td>
+              </tr>
+              <tr class="even">
+                <td>GeneE_KO</td>
+                <td>Gene3_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.132</td>
+                <td class=" dt-right">0.586666666666667</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneF_KO</td>
+                <td>Gene4_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.132</td>
+                <td class=" dt-right">0.47</td>
+              </tr>
+              <tr class="even">
+                <td>GeneJ_KO</td>
+                <td>Gene9_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.156</td>
+                <td class=" dt-right">0.52</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneH_KO</td>
+                <td>Gene3_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.176</td>
+                <td class=" dt-right">0.586666666666667</td>
+              </tr>
+              <tr class="even">
+                <td>GeneA_KO</td>
+                <td>Gene4_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.176</td>
+                <td class=" dt-right">0.47</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneD_KO</td>
+                <td>Gene8_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.202</td>
+                <td class=" dt-right">0.505</td>
+              </tr>
+              <tr class="even">
+                <td>GeneJ_KO</td>
+                <td>Gene8_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.202</td>
+                <td class=" dt-right">0.505</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneE_KO</td>
+                <td>Gene1_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.216</td>
+                <td class=" dt-right">0.7525</td>
+              </tr>
+              <tr class="even">
+                <td>GeneJ_KO</td>
+                <td>Gene3_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.235</td>
+                <td class=" dt-right">0.5875</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneB_KO</td>
+                <td>Gene4_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.235</td>
+                <td class=" dt-right">0.47</td>
+              </tr>
+              <tr class="even">
+                <td>GeneE_KO</td>
+                <td>Gene4_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.235</td>
+                <td class=" dt-right">0.47</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneE_KO</td>
+                <td>Gene2_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.244</td>
+                <td class=" dt-right">0.75</td>
+              </tr>
+              <tr class="even">
+                <td>GeneF_KO</td>
+                <td>Gene9_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.244</td>
+                <td class=" dt-right">0.61</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneC_KO</td>
+                <td>Gene1_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.256</td>
+                <td class=" dt-right">0.7525</td>
+              </tr>
+              <tr class="even">
+                <td>GeneC_KO</td>
+                <td>Gene4_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.294</td>
+                <td class=" dt-right">0.49</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneB_KO</td>
+                <td>Gene5_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.294</td>
+                <td class=" dt-right">0.881666666666667</td>
+              </tr>
+              <tr class="even">
+                <td>GeneD_KO</td>
+                <td>Gene2_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.3</td>
+                <td class=" dt-right">0.75</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneB_KO</td>
+                <td>Gene1_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.301</td>
+                <td class=" dt-right">0.7525</td>
+              </tr>
+              <tr class="even">
+                <td>GeneI_KO</td>
+                <td>Gene1_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.301</td>
+                <td class=" dt-right">0.7525</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneH_KO</td>
+                <td>Gene10_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.35</td>
+                <td class=" dt-right">0.956</td>
+              </tr>
+              <tr class="even">
+                <td>GeneA_KO</td>
+                <td>Gene8_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.35</td>
+                <td class=" dt-right">0.7</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneA_KO</td>
+                <td>Gene7_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.362</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="even">
+                <td>GeneF_KO</td>
+                <td>Gene7_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.362</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneG_KO</td>
+                <td>Gene7_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.362</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="even">
+                <td>GeneC_KO</td>
+                <td>Gene9_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.362</td>
+                <td class=" dt-right">0.72</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneD_KO</td>
+                <td>Gene3_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.368</td>
+                <td class=" dt-right">0.736</td>
+              </tr>
+              <tr class="even">
+                <td>GeneI_KO</td>
+                <td>Gene4_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.368</td>
+                <td class=" dt-right">0.525714285714286</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneA_KO</td>
+                <td>Gene5_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.368</td>
+                <td class=" dt-right">0.881666666666667</td>
+              </tr>
+              <tr class="even">
+                <td>GeneF_KO</td>
+                <td>Gene5_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.368</td>
+                <td class=" dt-right">0.881666666666667</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneJ_KO</td>
+                <td>Gene5_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.368</td>
+                <td class=" dt-right">0.881666666666667</td>
+              </tr>
+              <tr class="even">
+                <td>GeneJ_KO</td>
+                <td>Gene1_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.404</td>
+                <td class=" dt-right">0.808</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneC_KO</td>
+                <td>Gene2_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.432</td>
+                <td class=" dt-right">0.864</td>
+              </tr>
+              <tr class="even">
+                <td>GeneB_KO</td>
+                <td>Gene9_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.432</td>
+                <td class=" dt-right">0.72</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneH_KO</td>
+                <td>Gene4_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.441</td>
+                <td class=" dt-right">0.55125</td>
+              </tr>
+              <tr class="even">
+                <td>GeneI_KO</td>
+                <td>Gene6_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.462</td>
+                <td class=" dt-right">0.75</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneJ_KO</td>
+                <td>Gene6_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.462</td>
+                <td class=" dt-right">0.75</td>
+              </tr>
+              <tr class="even">
+                <td>GeneI_KO</td>
+                <td>Gene10_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.477</td>
+                <td class=" dt-right">0.956</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneD_KO</td>
+                <td>Gene7_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.509</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="even">
+                <td>GeneI_KO</td>
+                <td>Gene7_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.509</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneH_KO</td>
+                <td>Gene1_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.525</td>
+                <td class=" dt-right">0.875</td>
+              </tr>
+              <tr class="even">
+                <td>GeneA_KO</td>
+                <td>Gene6_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.525</td>
+                <td class=" dt-right">0.75</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneA_KO</td>
+                <td>Gene3_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.529</td>
+                <td class=" dt-right">0.881666666666667</td>
+              </tr>
+              <tr class="even">
+                <td>GeneH_KO</td>
+                <td>Gene5_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.529</td>
+                <td class=" dt-right">0.881666666666667</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneI_KO</td>
+                <td>Gene5_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.529</td>
+                <td class=" dt-right">0.881666666666667</td>
+              </tr>
+              <tr class="even">
+                <td>GeneC_KO</td>
+                <td>Gene10_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.549</td>
+                <td class=" dt-right">0.956</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneJ_KO</td>
+                <td>Gene2_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.591</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="even">
+                <td>GeneI_KO</td>
+                <td>Gene9_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.591</td>
+                <td class=" dt-right">0.844285714285714</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneF_KO</td>
+                <td>Gene10_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.624</td>
+                <td class=" dt-right">0.956</td>
+              </tr>
+              <tr class="even">
+                <td>GeneF_KO</td>
+                <td>Gene1_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.66</td>
+                <td class=" dt-right">0.91625</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneJ_KO</td>
+                <td>Gene10_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.703</td>
+                <td class=" dt-right">0.956</td>
+              </tr>
+              <tr class="even">
+                <td>GeneB_KO</td>
+                <td>Gene8_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.703</td>
+                <td class=" dt-right">1</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneF_KO</td>
+                <td>Gene3_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.721</td>
+                <td class=" dt-right">0.941</td>
+              </tr>
+              <tr class="even">
+                <td>GeneJ_KO</td>
+                <td>Gene4_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.721</td>
+                <td class=" dt-right">0.801111111111111</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneD_KO</td>
+                <td>Gene1_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.733</td>
+                <td class=" dt-right">0.91625</td>
+              </tr>
+              <tr class="even">
+                <td>GeneG_KO</td>
+                <td>Gene2_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.768</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneC_KO</td>
+                <td>Gene7_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.768</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="even">
+                <td>GeneE_KO</td>
+                <td>Gene7_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.768</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneD_KO</td>
+                <td>Gene9_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.768</td>
+                <td class=" dt-right">0.853333333333333</td>
+              </tr>
+              <tr class="even">
+                <td>GeneH_KO</td>
+                <td>Gene9_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.768</td>
+                <td class=" dt-right">0.853333333333333</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneH_KO</td>
+                <td>Gene6_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.808</td>
+                <td class=" dt-right">0.982222222222222</td>
+              </tr>
+              <tr class="even">
+                <td>GeneD_KO</td>
+                <td>Gene4_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.824</td>
+                <td class=" dt-right">0.824</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneG_KO</td>
+                <td>Gene5_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.824</td>
+                <td class=" dt-right">1</td>
+              </tr>
+              <tr class="even">
+                <td>GeneI_KO</td>
+                <td>Gene2_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.859</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneB_KO</td>
+                <td>Gene7_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.859</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="even">
+                <td>GeneJ_KO</td>
+                <td>Gene7_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.859</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneD_KO</td>
+                <td>Gene10_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.871</td>
+                <td class=" dt-right">0.956</td>
+              </tr>
+              <tr class="even">
+                <td>GeneG_KO</td>
+                <td>Gene10_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.871</td>
+                <td class=" dt-right">0.956</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneF_KO</td>
+                <td>Gene8_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.871</td>
+                <td class=" dt-right">1</td>
+              </tr>
+              <tr class="even">
+                <td>GeneF_KO</td>
+                <td>Gene6_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.884</td>
+                <td class=" dt-right">0.982222222222222</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneB_KO</td>
+                <td>Gene3_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.941</td>
+                <td class=" dt-right">0.941</td>
+              </tr>
+              <tr class="even">
+                <td>GeneC_KO</td>
+                <td>Gene3_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.941</td>
+                <td class=" dt-right">0.941</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneI_KO</td>
+                <td>Gene3_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.941</td>
+                <td class=" dt-right">0.941</td>
+              </tr>
+              <tr class="even">
+                <td>GeneC_KO</td>
+                <td>Gene5_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.941</td>
+                <td class=" dt-right">1</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneD_KO</td>
+                <td>Gene5_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.941</td>
+                <td class=" dt-right">1</td>
+              </tr>
+              <tr class="even">
+                <td>GeneA_KO</td>
+                <td>Gene2_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.953</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneH_KO</td>
+                <td>Gene2_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.953</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="even">
+                <td>GeneH_KO</td>
+                <td>Gene7_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.953</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneE_KO</td>
+                <td>Gene9_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.953</td>
+                <td class=" dt-right">0.953</td>
+              </tr>
+              <tr class="even">
+                <td>GeneA_KO</td>
+                <td>Gene10_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.956</td>
+                <td class=" dt-right">0.956</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneE_KO</td>
+                <td>Gene10_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.956</td>
+                <td class=" dt-right">0.956</td>
+              </tr>
+              <tr class="even">
+                <td>GeneH_KO</td>
+                <td>Gene8_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.956</td>
+                <td class=" dt-right">1</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneI_KO</td>
+                <td>Gene8_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.956</td>
+                <td class=" dt-right">1</td>
+              </tr>
+              <tr class="even">
+                <td>GeneA_KO</td>
+                <td>Gene1_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">0.961</td>
+                <td class=" dt-right">1</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneG_KO</td>
+                <td>Gene1_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">1</td>
+              </tr>
+              <tr class="even">
+                <td>GeneC_KO</td>
+                <td>Gene6_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">1</td>
+              </tr>
+              <tr class="odd">
+                <td>GeneC_KO</td>
+                <td>Gene8_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">1</td>
+              </tr>
+              <tr class="even">
+                <td>GeneE_KO</td>
+                <td>Gene5_mut</td>
+                <td class=" dt-right">0</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">1</td>
+                <td class=" dt-right">1</td>
+              </tr>
+            </tbody>
+          </table>
+          </p>
+        </div>
+      </div>
+      <div id="menu2" class="card w-75 mt-5 tab-pane fade">
+        <div class="card-body">
+          <h4 class="card-title">Visualising the data</h4>
+          <p class="card-text">
+          <p>The boxplot demonstrates the 3 genes with a significant differences in cell count fold change were detected
+            in the presence or absence of a cancer diver mutation (p&lt;0.05)</p>
+          <ul>
+            <li>When gene G is knocked-out there was a significant <em>increase</em> in cell count fold change in the
+              presence of the cancer driver mutation 6
+              <ul>
+                <li>This suggests cell viability is maintained indicating cancer driver mutation 6 compensates for the
+                  function of gene G</li>
+              </ul>
+            </li>
+            <li>When gene E is knocked-out there was a significant <em>decrease</em> in cell count fold change in the
+              presence of the cancer driver mutation 8
+              <ul>
+                <li>This suggests cell viability is reduced indicating cancer driver mutation 8 relies on gene E for
+                  cell
+                  viability</li>
+              </ul>
+            </li>
+            <li>When gene A is knocked-out there was a significant <em>increase</em> in cell count fold change in the
+              presence of the cancer driver mutation 9
+              <ul>
+                <li>This suggests cell viability is maintained indicating cancer driver mutation 9 ompensates for the
+                  function of gene A</li>
+              </ul>
+            </li>
+            <li>significance not retained after fdr adjustment</li>
+          </ul>
+          <img src="img/visualisingthedata1.png" height="600px" width="800px" style="border: 1px solid #555;">
+          <p><br></p>
+          <p>We can also visualise the mean cell count fold change for each Knocked-out gene in the presence and absence
+            of each cancer driver mutation as illustrated in the heatmap below.</p>
+          <ul>
+            <li>Gradient illustrates the mean cell count fold change ranging from high (red) to low (blue).</li>
+          </ul>
+          <img src="img/visualisingthedata2.png" height="600px" width="800px" style="border: 1px solid #555;">
+        </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
